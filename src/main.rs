@@ -4,9 +4,11 @@ use traits::Sounds;
 
 mod closure;
 mod dsa;
+mod files;
 mod helper;
 mod iterators;
 mod mutex;
+mod mympsc;
 mod scopethreads;
 mod thread;
 mod traits;
@@ -42,5 +44,11 @@ fn main() {
 
     // scopethreads::scope_thread_spawn();
     // println!("Hello from main");
-    mutex::test_mutex()
+    // mutex::test_mutex()
+    // mympsc::test_thread();
+    // files::test_create_dir()
+    // files::file_create();
+    // files::write_to_file();
+    // files::delete_file()
+    files::read_file()
 }
